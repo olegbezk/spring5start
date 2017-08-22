@@ -12,17 +12,17 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String publisherName;
+    private String name;
 
-    private String publisherAddress;
+    private String address;
 
     public Publisher() {
     }
 
-    public Publisher(final String publisherName, final String publisherAddress) {
+    public Publisher(final String name, final String address) {
 
-        this.publisherName = publisherName;
-        this.publisherAddress = publisherAddress;
+        this.name = name;
+        this.address = address;
     }
 
     public Long getId() {
@@ -33,19 +33,19 @@ public class Publisher {
         this.id = id;
     }
 
-    public String getPublisherName() {
-        return publisherName;
+    public String getName() {
+        return name;
     }
 
-    public void setPublisherName(final String publisherName) {
-        this.publisherName = publisherName;
+    public void setName(final String name) {
+        this.name = name;
     }
 
-    public String getPublisherAddress() {
-        return publisherAddress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setPublisherAddress(final String publisherAddress) {
-        this.publisherAddress = publisherAddress;
+    public void setAddress(final String address) {
+        this.address = address;
     }
 }
