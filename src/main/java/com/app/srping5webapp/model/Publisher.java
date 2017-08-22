@@ -19,18 +19,18 @@ public class Publisher {
     public Publisher() {
     }
 
+    public Publisher(final String publisherName, final String publisherAddress) {
+
+        this.publisherName = publisherName;
+        this.publisherAddress = publisherAddress;
+    }
+
     public Long getId() {
         return id;
     }
 
     public void setId(final Long id) {
         this.id = id;
-    }
-
-    public Publisher(final String publisherName, final String publisherAddress) {
-
-        this.publisherName = publisherName;
-        this.publisherAddress = publisherAddress;
     }
 
     public String getPublisherName() {
